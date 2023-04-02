@@ -21,6 +21,9 @@ export class TicketComponent implements OnInit {
   @Output()
   notifyDelete :EventEmitter<Ticket> = new EventEmitter<Ticket>();
   
+  @Output()
+  notifyArchive: EventEmitter<Ticket> = new EventEmitter<Ticket>();
+
   constructor() {
   }
 
@@ -33,5 +36,9 @@ export class TicketComponent implements OnInit {
 
   deleteTicket(){
     this.notifyDelete.emit(this.ticket);
+  }
+
+  archiveTicket(){
+    this.notifyArchive.emit(this.ticket);
   }
 }

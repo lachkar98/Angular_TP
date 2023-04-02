@@ -9,13 +9,15 @@ export const TICKETS_MOCKED: Ticket[] = [
     description: '',
     date: dateToday,
     student: 'Paul',
-    major :majorType.SI
+    major :majorType.SI,
+    archived : true
   },
   {
     title: 'SI5 in El Hoceima',
     description: 'Description du voyage',
     date: dateToday,
     student: 'Anakin',
-    major :majorType.GB
+    major :majorType.GB,
+    archived :true
   },
 ];

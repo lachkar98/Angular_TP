@@ -9,4 +9,5 @@ export interface Ticket {
   date?: Date;
   student?: string;
   major?:majorType;
+  archived: boolean;
 }
