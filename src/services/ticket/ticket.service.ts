@@ -30,10 +30,8 @@ export class TicketService {
   }
   deleteTicket(ticket:Ticket){
     const index:number = this.ticketList.findIndex((item:Ticket)=>item == ticket);
-    console.log("bien supprimer")
     if(index != -1){
       this.ticketList.splice(index,1);
-      console.log("bien supprimer")
     }
   }
 }

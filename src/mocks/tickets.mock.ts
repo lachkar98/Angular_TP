@@ -1,4 +1,5 @@
 import { Ticket } from '../models/ticket';
+import { majorType } from '../models/ticket';
 
 const dateToday: Date = new Date();
 
@@ -8,13 +9,13 @@ export const TICKETS_MOCKED: Ticket[] = [
     description: '',
     date: dateToday,
     student: 'Paul',
-    major :'GB'
+    major :majorType.SI
   },
   {
     title: 'SI5 in El Hoceima',
     description: 'Description du voyage',
     date: dateToday,
     student: 'Anakin',
-    major :'SI'
+    major :majorType.GB
   },
 ];
