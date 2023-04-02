@@ -22,4 +22,8 @@ export class TicketListComponent implements OnInit {
     console.log('event received from child:', hasBeenSelected);
   }
 
+  deleteTicket(ticket: Ticket) {
+    console.log("Arrivée à delete fonction")
+    this.ticketService.deleteTicket(ticket);
+  }
 }
