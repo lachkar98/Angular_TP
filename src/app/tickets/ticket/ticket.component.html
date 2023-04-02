@@ -2,7 +2,7 @@
   <!-- we use the {{ }} syntax to display the data, more info: https://angular.io/guide/displaying-data-->
   <h3>Title : {{ticket.title}}</h3>
   <i class="fas fa-calendar-alt"></i> {{ticket.date | date: 'shortTime'}} &nbsp;&nbsp;
-  <i class="far fa-user"></i> {{ticket.student.nom }} {{ticket.student.prenom }}
+  <i class="far fa-user"></i> {{ ticket.student.id }} - {{ticket.student.nom }} {{ticket.student.prenom }}
   
   <i class="fa-solid fa-bolt" *ngIf = "ticket.major == 'GB'"></i> 
   <i class="fa-solid fa-bolt" *ngIf = "ticket.major == 'SI'"></i>

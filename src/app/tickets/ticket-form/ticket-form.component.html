@@ -13,8 +13,19 @@
   <label for="major">
     Major <br>
     <select class="input-custom lg-select" id="major" [formControlName]="'major'">
-      <option *ngFor ="let item of majorFields" [value]="item" >
+      <option value="" selected >choose major</option>
+      <option *ngFor="let item of majorFields" [value]="item">
         {{item}}
+      </option>
+    </select>
+  </label>
+  <br>
+  <label for="student">
+    student <br>
+    <select class="input-custom lg-select" id="student" formControlName="student">
+      <option value="" selected disabled>choose student</option>
+      <option *ngFor="let item of studentList" [value]="item.id">
+        {{item.id}} - {{item.nom }} {{item.prenom}} 
       </option>
     </select>
   </label>
