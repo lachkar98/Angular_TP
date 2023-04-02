@@ -6,4 +6,8 @@
       (notifyDelete)="deleteTicket($event)" (notifyArchive)="archiveTicket($event)">
     </app-ticket>
   </div>
+  <div>
+    <button class="costum-btn" type="button" (click)="hideArchivedTicket()"> hide archived ticket</button>
+    <button class="costum-btn" type="button" (click)="showArchivedTicket()">Show archived ticket</button>
+  </div>
 </div>
