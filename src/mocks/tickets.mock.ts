@@ -20,4 +20,12 @@ export const TICKETS_MOCKED: Ticket[] = [
     major :majorType.GB,
     archived :true
   },
+  {
+    title: 'SI6 in El Jadida',
+    description: 'Description du voyage',
+    date: dateToday,
+    student: 'Anakin',
+    major :majorType.GB,
+    archived :false
+  }
 ];
