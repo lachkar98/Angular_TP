@@ -6,7 +6,7 @@
 
   <i class="fas fa-bolt" *ngIf="ticket.major == 'GB'"></i>
   <i class="fas fa-check" *ngIf="ticket.major == 'SI'"></i>
-  major : {{ticket.major}}
+    major : {{ticket.major}}
   <button type="button" (click)="archiveTicket()">Archive</button>
   <button type="button" (click)="deleteTicket()">Delete</button>
 </div>
